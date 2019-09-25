@@ -1,17 +1,23 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.329
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29215.179
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GraphQLDemo.Application", "GraphQLDemo.Application\GraphQLDemo.Application.csproj", "{3C4D113A-C06D-41BA-8AEE-823BD03CEB9B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GraphQLDemo.Domain", "GraphQLDemo.Domain\GraphQLDemo.Domain.csproj", "{6CC243D0-1E26-46BB-8038-B3F1B68CA8F8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GraphQLDemo.Domain", "GraphQLDemo.Domain\GraphQLDemo.Domain.csproj", "{6CC243D0-1E26-46BB-8038-B3F1B68CA8F8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GraphQLDemo.Infrastructure", "GraphQLDemo.Infrastructure\GraphQLDemo.Infrastructure.csproj", "{FF8D80B1-0FE7-40F7-9FF3-BEEA9FC53FBB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GraphQLDemo.Infrastructure", "GraphQLDemo.Infrastructure\GraphQLDemo.Infrastructure.csproj", "{FF8D80B1-0FE7-40F7-9FF3-BEEA9FC53FBB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GraphQLDemo.Tests", "GraphQLDemo.Tests\GraphQLDemo.Tests.csproj", "{F9919BA4-636D-40B0-9F7D-644E8AFD6929}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GraphQLDemo.Tests", "GraphQLDemo.Tests\GraphQLDemo.Tests.csproj", "{F9919BA4-636D-40B0-9F7D-644E8AFD6929}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GraphQLDemo.WebApi", "GraphQLDemo.WebApi\GraphQLDemo.WebApi.csproj", "{7551397C-DC87-4236-9749-F1436F12BFE0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GraphQLDemo.WebApi", "GraphQLDemo.WebApi\GraphQLDemo.WebApi.csproj", "{7551397C-DC87-4236-9749-F1436F12BFE0}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{FAAF274D-2904-4468-8635-B062A639C94E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "migration", "migration", "{7750CE0B-2147-40AD-92B8-3052050542E2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GraphQL.Migration", "GraphQL.Migration\GraphQL.Migration.csproj", "{C0C8DE5E-5BAA-44A6-89AF-D0DBF0C0AA6F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,9 +45,20 @@ Global
 		{7551397C-DC87-4236-9749-F1436F12BFE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7551397C-DC87-4236-9749-F1436F12BFE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7551397C-DC87-4236-9749-F1436F12BFE0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FAAF274D-2904-4468-8635-B062A639C94E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FAAF274D-2904-4468-8635-B062A639C94E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FAAF274D-2904-4468-8635-B062A639C94E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FAAF274D-2904-4468-8635-B062A639C94E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0C8DE5E-5BAA-44A6-89AF-D0DBF0C0AA6F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0C8DE5E-5BAA-44A6-89AF-D0DBF0C0AA6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0C8DE5E-5BAA-44A6-89AF-D0DBF0C0AA6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0C8DE5E-5BAA-44A6-89AF-D0DBF0C0AA6F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C0C8DE5E-5BAA-44A6-89AF-D0DBF0C0AA6F} = {7750CE0B-2147-40AD-92B8-3052050542E2}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6DF3CED7-95CB-4AF9-9512-8A892F9BF64F}

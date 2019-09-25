@@ -1,0 +1,35 @@
+version: '3.4'
+
+services:
+  graphql.webapi:
+    image: graphqlwebapi
+    build:
+      context: .
+      dockerfile: GraphQL.Webapi/Dockerfile
+    ports:
+      - 8081:80
+    environment:
+      GRAPHQL_CONN: Host=graphql-db;Port=5432;Database=GraphQL;User Id=postgres;Password=postgres;
+    networks:
+      - graphql-network
+    depends_on:
+      - graphql-db
+
+  graphql-db:
+    image: postgres:9.5
+    restart: always
+    environment:  
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+    ports:
+      - 5432:5432
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    networks:
+      - graphql-network
+
+volumes:
+  pgdata:
+
+networks:
+  graphql-network:

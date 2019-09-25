@@ -13,8 +13,4 @@
     <ProjectReference Include="..\GraphQLDemo.Domain\GraphQLDemo.Domain.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="UseCases\DesignPattern\" />
-  </ItemGroup>
-
 </Project>
