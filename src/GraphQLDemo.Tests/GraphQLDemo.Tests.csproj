@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Autofac" Version="4.9.4" />
+    <PackageReference Include="FluentAssertions" Version="5.9.0" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.9.0" />
+    <PackageReference Include="xunit" Version="2.4.0" />
+    <PackageReference Include="xunit.frameworks.autofac" Version="0.1.0" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Cases\Application\" />
+    <Folder Include="Cases\Insfrastructure\" />
+    <Folder Include="Cases\WebApi\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\GraphQLDemo.Application\GraphQLDemo.Application.csproj" />
+    <ProjectReference Include="..\GraphQLDemo.Domain\GraphQLDemo.Domain.csproj" />
+    <ProjectReference Include="..\GraphQLDemo.Infrastructure\GraphQLDemo.Infrastructure.csproj" />
+    <ProjectReference Include="..\GraphQLDemo.WebApi\GraphQLDemo.WebApi.csproj" />
+  </ItemGroup>
+
+</Project>

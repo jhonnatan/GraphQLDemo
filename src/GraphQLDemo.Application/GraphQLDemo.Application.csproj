@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="GraphQL" Version="2.4.0" />
+    <PackageReference Include="System.Linq.Expressions" Version="4.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\GraphQLDemo.Domain\GraphQLDemo.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="UseCases\DesignPattern\" />
+  </ItemGroup>
+
+</Project>
